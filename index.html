@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-gen Visuals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lib/bitcoinJS-lib.js"></script>
+    <script src="src/logic.js"></script>
+</head>
+<body>
+    <select id="target-address">
+        <option value="1BY8GQbnueYofwSuFAT3USAhGjPrkxDdW9">Puzzle 67</option>
+        <option value="1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ">Puzzle 68</option>
+        <option value="19vkiEajfhuZ8bs8Zu2jgmC6oqZbWqhxhG">Puzzle 69</option>
+        <option value="1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU">Puzzle 71</option>
+        <option value="1JTK7s9YVYywfm5XUH7RNhHJH1LshCaRFR">Puzzle 72</option>
+        <option value="12VVRNPi4SJqUTsp6FmqDqY5sGosDtysn4">Puzzle 73</option>
+        <option value="1FWGcVDK3JGzCC3WtkYetULPszMaK2Jksv">Puzzle 74</option>
+        <option value="1DJh2eHFYQfACPmrvpyWc8MSTYKh7w9eRF">Puzzle 76</option>
+        <option value="1Bxk4CQdqL9p22JEtDfdXMsng1XacifUtE">Puzzle 77</option>
+        <option value="15qF6X51huDjqTmF9BJgxXdt1xcj46Jmhb">Puzzle 78</option>
+        <option value="1ARk8HWJMn8js8tQmGUJeQHjSE7KRkn2t8">Puzzle 79</option>
+        <option value="15qsCm78whspNQFydGJQk5rexzxTQopnHZ">Puzzle 81</option>
+        <option value="13zYrYhhJxp6Ui1VV7pqa5WDhNWM45ARAC">Puzzle 82</option>
+        <option value="14MdEb4eFcT3MVG5sPFG4jGLuHJSnt1Dk2">Puzzle 83</option>
+        <option value="1CMq3SvFcVEcpLMuuH8PUcNiqsK1oicG2D">Puzzle 84</option>
+        <option value="1K3x5L6G57Y494fDqBfrojD28UJv4s5JcK">Puzzle 86</option>
+        <option value="1PxH3K1Shdjb7gSEoTX7UPDZ6SH4qGPrvq">Puzzle 87</option>
+        <option value="16AbnZjZZipwHMkYKBSfswGWKDmXHjEpSf">Puzzle 88</option>
+        <option value="19QciEHbGVNY4hrhfKXmcBBCrJSBZ6TaVt">Puzzle 89</option>
+    </select>
+    <div id="controls">
+        <button id="save-grid">Save</button>
+        <button id="copy-key">Copy Key</button>
+        <button id="copy-address">Copy Address</button>
+    </div>
+    <div id="grid-container"></div>
+    <div id="navigation">
+        <button id="load-grid">Load</button>
+        <button id="clear-grid">Clear</button>
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <div id="hex-output">
+        <p>Private Key</p>
+        <div id="hex-string-container">
+            <span id="hex-string">0000...</span>
+        </div>
+        <p>Bitcoin Address</p>
+        <div id="bitcoin-address-container">
+            <span id="bitcoin-address">N/A</span>
+        </div>
+        <p>Found Hex Value:</p>
+        <div id="found-container">
+            <span id="found-hex">N/A</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
