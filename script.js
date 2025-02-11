@@ -110,10 +110,8 @@ document.getElementById("load-grid").addEventListener("click", () => {
       cells.forEach((cell, index) => {
           if (binaryState[index] === "1") {
               cell.classList.add("active");
-              cell.textContent = "1";
           } else {
               cell.classList.remove("active");
-              cell.textContent = "0";
           }
       });
       updateHexString();
